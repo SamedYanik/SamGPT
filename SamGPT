@@ -1,0 +1,98 @@
+import random
+print ("-------------------BAŞLANGIÇ--------------------")
+ad=input("Adın:")
+yas=input("Yaş:")
+doggun=input("Doğum Günün:")
+
+print("--------------SamCPT A HOŞGELDİNİZ---------------")
+print("(.'a basıp Enter tuşuna bastık'dan sonra Hata'yı dikkate almayınız)")
+sohbet=input("Merhaba!.Size nasıl yardımcı olabilirim?__=")
+    
+while True:
+    if sohbet == "merhaba"   :
+        print("Merhaba,bir şey sormak istermisin?__=")
+        sohbet=input("Lütfen .'a basıp Enter tuşuna basınız.= ")
+        
+    elif sohbet == "naber" :
+        print("İyiyim bir isteğin var mı?")
+        sohbet=input("Lütfen .'a basıp Enter tuşuna basınız.= ")
+        
+    elif sohbet == "adım ne" or sohbet == "benim adım ne" :
+        print("Sen",ad,"'sin!")
+        sohbet=input("Lütfen .'a basıp Enter tuşuna basınız.= ")
+        
+    elif sohbet == "kaç yaşındayım" or sohbet == "kaç yıl yaşındayım"  :
+        print("Sen",yas,"yaşındasın!")
+        sohbet=input("Lütfen .'a basıp Enter tuşuna basınız.= ")
+        
+    elif sohbet == "ne zaman doğdum" or sohbet == "doğum günüm ne zaman"  :   
+        print("Sen",doggun,"tarihinde doğdun!")
+        sohbet=input("Lütfen .'a basıp Enter tuşuna basınız.= ")
+        
+        
+    elif sohbet == "nasılsın" or sohbet == "Nasılsın" :
+        print("Gayet iyiyim. sorduğun için teşekkürler")
+        sohbet=input("Lütfen .'a basıp Enter tuşuna basınız.= ")
+             
+    elif sohbet == "sen nesin" or sohbet == "Sen nesin":
+        print("Ben halen gelişmekte olan Türk yapımı bir yapay zekayım.Adımda SamGPT.Beni Samed yanık oluşturdu.")
+        sohbet=input("Lütfen .'a basıp Enter tuşuna basınız.= ")
+        
+    elif sohbet == "bir haftada kaç gün vardır" or sohbet == "Bir haftada kaç gün vardır":
+        print("7 gün vardır.")
+        sohbet=input("Lütfen .'a basıp Enter tuşuna basınız.= ")
+        
+    elif sohbet == "türkiyenin başkenti neresidir" :
+        print("Ankara'dır.")
+        sohbet=input("Lütfen .'a basıp Enter tuşuna basınız.= ")
+        
+    elif sohbet == "futbol nedir" or sohbet == "futbol nasıl oynanır" :
+        print("Futbol, iki takımın topu rakip kaleye atmaya çalıştığı, 11 oyuncudan oluşan ve 90 dakika süren bir spordur. En fazla gol atan takım kazanır.")
+        sohbet=input("Lütfen .'a basıp Enter tuşuna basınız.= ")
+        
+    elif sohbet == "basketbol nedir" or sohbet == "basketbol nasıl oynanır" :
+        print ("Basketbol, iki takımın topu rakiplerinin potasına atmaya çalıştığı bir spor dalıdır. Her takımda 5 oyuncu bulunur ve oyun süresi  48 dakikadır. Amaç,topu potaya atarak sayı yapmaktır. En fazla sayıyı bulan takım maçı kazanır.")
+        sohbet=input("Lütfen .'a basıp Enter tuşuna basınız.= ")
+        
+    elif sohbet == "sen ne zaman kuruldun" or sohbet == "sen hangi tarihte kuruldun" :
+        print("Ben Samed YANIK tarafında 01.06.2025 tarihinde saat 18:30 da kurulan bir yapay zekayım." )
+        sohbet=input("Lütfen .'a basıp Enter tuşuna basınız.= ")
+        
+    elif sohbet == "en hızlı hayvan nedir" or sohbet == "En hızlı hayvan nedir" :
+        print("En hızlı hayvan, çita olup, saatte 100 km'ye kadar hızlanabilir.")
+        sohbet=input("Lütfen .'a basıp Enter tuşuna basınız.= ")   
+        
+    elif sohbet == "uzaya ilk kim çıktı" or sohbet == "uzaya ilk kim gitti" :
+         print("İlk insanlı uzay uçuşu, 1961 yılında Yuri Gagarin tarafından yapıldı.")
+         sohbet=input("Lütfen .'a basıp Enter tuşuna basınız.= ") 
+         
+    elif  sohbet == ("ben kimim"):
+        print("Sen",ad,"'sin!",yas,"yaşındasın ve",doggun,"tarihinde doğdun")
+        sohbet=input("Lütfen .'a basıp Enter tuşuna basınız.= ")
+        
+    elif sohbet == ("kaç yaşındayım") or sohbet == ("ben kaç yaşındayım") :
+        print("Sen",yas,"yaşındasın!")
+        sohbet=input("Lütfen .'a basıp Enter tuşuna basınız.= ")
+        
+    elif sohbet == ("ben ne zaman doğdum") :
+        print("Sen",doggun,"tarihinde doğdun!")
+        sohbet=input("Lütfen .'a basıp Enter tuşuna basınız.= ")
+     
+   
+        
+    #rastgele sayı oyunu isteğe bağlı
+    if sohbet == "oyun" or sohbet == "oyun oynayalım" or sohbet == "oyun aç":
+        rsb = random.randint(1, 20)  
+        rso = int(input("Tamamdır senle rastgele sayı oynayabiliriz! Bu sayı 1 ile 20 arasında, sence sayı ne?__="))
+        if rsb == rso:
+            print("Oyunu Kazandın! ")
+            sohbet=input("Başka bir şey sormak ister misin?__=")
+        else:
+            print("Malesef bilemedin :(. Sayı ",rsb," 'idi. ")
+            sohbet=input("Başka bir şey sormak ister misin?__=")
+                
+                
+    else :
+        print("Ne dediğini anlamadım? Daha gelişme aşamasında olduğum için bazı şeyleri anlayamıyorum.")
+        sohbet=input("Başka bir şey sormak ister misin?__=")
+                
