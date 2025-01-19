@@ -1,0 +1,2 @@
+# SamGPT
+SamGPT ile tanış
